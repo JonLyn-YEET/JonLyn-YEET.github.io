@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illumyn - Contact Us</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="javascript/script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="assets/Logo.png" alt="Illumyn Logo" id="logo"></a>
+        <h1><a href="index.html">Illumyn</a></h1>
+    </header>
+
+    <nav>
+        <div class="wrapper"><img src="assets\Hamburger_icon.svg" alt="Menu Icon" id="menuIcon"></div>
+
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="aboutContact">
+            <div class="container">
+                <h2>h2</h2>
+                <p>
+                    Dolor pariatur consequat ipsum reprehenderit non. Ad exercitation qui labore anim. Sint pariatur voluptate ipsum laboris. Nisi amet sunt officia est. Aute nisi et id cillum. Cillum qui pariatur id ea fugiat in esse velit nulla aliquip qui ullamco labore eu.
+                </p>
+            </div>
+            <div class="wrapper">
+                <img src="assets/contact.png" alt="">
+            </div>
+        </section>
+
+        <section id="contactFormSect">
+            <form id="contactForm" action="mailto:jonatan.lynum.i86142@mcast.edu.mt" method="post" enctype="text/plain">
+                <label for="fName">First Name:</label>
+                <input name="First Name" type="text" id="fName" placeholder="Ola" >
+                <br>
+                <label for="lName">Last Name:</label>
+                <input name="Last Name" type="text" id="lName" placeholder="Nordmann" >
+                <br>
+                <label for="email">Email:</label>
+                <input name="Emal" type="email" id="email" placeholder="Ola@example.com" >
+                <br>
+                <label for="category">Category:</label>
+                <select name="Category" id="category" >
+                    <option value="" selected disabled hidden>Please Choose a Category</option>
+                    <option value="option1">Category 1</option>
+                    <option value="option2">Category 2</option>
+                    <option value="option3">Category 3</option>
+                    <option value="other">Other (describe below)</option>
+                </select>
+                <br>
+                <label for="message">Message:</label>
+                <textarea name="Message" id="message" cols="42" rows="5" ></textarea>
+                <br>
+                <button type="submit" id="submitContact">Send</button>
+                <p id="errorMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>&copy; 2024 - Jonatan Lynum</footer>
+</body>
+</html>
